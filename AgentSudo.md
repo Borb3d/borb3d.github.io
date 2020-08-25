@@ -47,7 +47,7 @@ Al revisar el archivo .txt vemos que es una carta dirigida al AgenteJ, parece qu
 
 ![To_agentJ](images/agentSudo/cartaAgenteJ.png)
 
-Usamos la herramienta "binwalk" con el parámetro -e (para extraer lo que encuentre) a la imágen "Cutie.png" y encontramos que dentro tiene varios ficheros, la otra imagen no contiene nada de momento.
+Usamos la herramienta "binwalk" con el parámetro -e (para extraer lo que encuentre) a la imagen "Cutie.png" y encontramos que dentro tiene varios ficheros, la otra imagen no contiene nada de momento.
 
 ![binwalk](images/agentSudo/stego1.png)
 
