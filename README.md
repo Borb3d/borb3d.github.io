@@ -8,4 +8,4 @@ Pueden contactarme por email a: borb3d@gmail.com o en telegram como "borb3d".
 Gracias por su atención y os dejo por aquí las WriteUps!
 
 ### TryHackMe (THM)
-*  [a relative link](AgentSudo.md)**1. Agent Sudo**
+*  [**1. Agent Sudo**](AgentSudo.md)
