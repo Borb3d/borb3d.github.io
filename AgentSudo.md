@@ -36,7 +36,7 @@ Recargamos la página y...Bingo! nos ha redireccionado directamente a un directo
 Vemos que es una carta dirigida a "chris" (ya tenemos un nombre de usuario) y le está diciendo que cambie su contraseña, que es muy débil.
 Probamos un ataque de fuerza bruta con "hydra" hacia el servicio de FTP, que sabemos que está abierto.
 
-[hydra](images/agentSudo/hydraFTP.png)
+![hydra](images/agentSudo/hydraFTP.png)
 
 Bien hemos conseguido las credenciales para acceder al servidor de FTP.
 Cuando accedemos vemos 3 archivos (2 imágenes y 1 documento de texto), los descargamos a nuestro equipo con el comando GET.
