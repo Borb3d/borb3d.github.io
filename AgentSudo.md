@@ -2,7 +2,7 @@
 Volver al [Indice](README.md)
 
 Comenzamos con mi primera WriteUp, en este caso vamos a realizar una prueba a la máquina "Sudo Agent" de TryHackMe, está clasificada con nivel "Easy" dentro de esta plataforma.
-Espero que me mandéis diferentes críticas para saber si os gusta la forma de explicar, la variedad, estilo...etc y como podría mejorar.
+Espero que me mandéis diferentes críticas para saber si os gusta la forma de explicar, la variedad, estilo... y como podría mejorar.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ Revisando lo que nos muestra la página inicial, nos dice que usemos nuestro pro
 *  Le damos a "custom" y ponemos C.
 Recargamos la página y...Bingo! nos ha redireccionado directamente a un directorio con el siguiente texto:
 
-![AgentC](images/agentSudo/agentC.png)
+![AgentC](images/agentSudo/user-agent.gif)
 
 Vemos que es una carta dirigida a "chris" (ya tenemos un nombre de usuario) y le está diciendo que cambie su contraseña, que es muy débil.
 Probamos un ataque de fuerza bruta con "hydra" hacia el servicio de FTP, que sabemos que está abierto.
