@@ -5,7 +5,7 @@ Comenzamos con mi primera WriteUp, en este caso vamos a realizar una prueba a la
 Espero que me mandéis diferentes críticas para saber si os gusta la forma de explicar, la variedad, estilo... y como podría mejorar.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Enumeración
+## **Enumeración**
 Primero comenzamos lanzando un escaneo a la ip de la máquina a todos los puertos (voy a usar una utilidad que creé en Python3 que me lanza un comando de nmap y me crea diferentes directorios para poder ser más ordenado a la hora de trabajar, la herramienta está bastante verde y seguramente deje de usarla pero de momento es cómoda por la creación de los directorios), dejo aquí la sintaxis por si os interesa.
 *  nmaphtb.py "ipVictima" -o "nombre del directorio raiz"
     *  Crea la carpeta que se puso en el parámetro -o con los "subdirectorios" content, nmap, exploits, scripts, si no se le indica parámetro deja el archivo con el escaneo en el directorio actual.
@@ -38,7 +38,7 @@ Probamos un ataque de fuerza bruta con "hydra" hacia el servicio de FTP, que sab
 
 ![hydra](images/agentSudo/hydraFTP.png)
 
-## Explotación
+## **Explotación**
 Bien hemos conseguido las credenciales para acceder al servidor de FTP.
 Cuando accedemos vemos 3 archivos (2 imágenes y 1 documento de texto), los descargamos a nuestro equipo con el comando GET.
 
@@ -81,7 +81,7 @@ Conseguimos loguearnos con el usuario "james" y ahí tenemos la flag de user.
 
 ![userFlag](images/agentSudo/flagUser.png)
 
-## Post-Explotación
+## **Post-Explotación**
 Para conseguir llegar a la flag de Root vamos a realizar primero el comando "sudo -l" para ver los privilegios que tiene este usuario como root y vemos que tiene los privilegios del comando "sudo" por lo que vamos a ver que versión de éste.
 
 ![sudo-l](images/agentSudo/sudo-l.png)
