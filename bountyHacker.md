@@ -1,7 +1,7 @@
 # Bounty Hacker WriteUp
 Volver al [Indice](README.md)
 
-Seguimos con la segunda WriteUp, seguimos en la plataforma THM con la máquina "Bounty Hacker", también poseé una calificación de "Easy" dentro de la plataforma.
+Continuamos con la segunda WriteUp, seguimos en la plataforma THM con la máquina "Bounty Hacker", también poseé una calificación de "Easy" dentro de la plataforma.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## *# Enumeración*
