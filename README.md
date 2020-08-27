@@ -12,3 +12,4 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 
 ### TryHackMe (THM)
 *  [**1. Agent Sudo**](AgentSudo.md)
+*  [**1. Bounty Hacker**](bountyHacker.md)
