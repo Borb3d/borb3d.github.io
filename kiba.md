@@ -6,7 +6,7 @@ Está catalogada con un nivel de "Easy" aunque es bastante interesante esta máq
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## *# Enumeración*
-Como siempre, vamos a realizar un escaneo de los puertos, servicios y versiones para var con lo que tratamos.
+Como siempre, vamos a realizar un escaneo de los puertos, servicios y versiones para ver con lo que tratamos.
 
 ![nmap](images/kiba/nmap.png)
 
