@@ -13,3 +13,7 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 ### TryHackMe (THM)
 *  [**1. Agent Sudo**](AgentSudo.md)
 *  [**2. Bounty Hacker**](bountyHacker.md)
+*  [**3. Kiba**](kiba.md)
+
+### HackTheBox (HTB)
+Estas WriteUps las iré colocando conforme vayan retirando máquinas activas.
