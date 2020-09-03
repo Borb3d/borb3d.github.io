@@ -63,7 +63,7 @@ Vemos que tiene privilegios para ejecutar el comando ```"yum"```.
 
 ![sudo-l](images/dailyBugle/sudo-l.png)
 
-Así que accedemos a [https://gtfobins.github.io/] y realizamos lo que vemos en la siguiente imagen para poder ser ROOT.
+Así que accedemos a [https://gtfobins.github.io/](https://gtfobins.github.io/) y realizamos lo que vemos en la siguiente imagen para poder ser ROOT.
 
 ![RootFlag](images/dailyBugle/rootFlag.png)
 
