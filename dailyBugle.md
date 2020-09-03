@@ -26,7 +26,7 @@ Lanzamos el exploit con una sintáxis sencilla (script y la URL del servidor Joo
 
 ![ExploitSQLi](images/dailyBugle/exploit1.png)
 
-Este script nos saca la pass "Hasheado", así que se lo vamos a pasar a John para que nos lo de en texto plano.  
+Este script nos saca la pass "Hasheada", así que se lo vamos a pasar a John para que nos la de en texto plano.  
 Lo colocamos en un archivo, en mi caso le puse el nombre del usuario delante separado de ":" para que john lo entienda correctamente.  
 ```john hash --wordlist=/usr/share/wordlists/rockyou.txt```
 
@@ -37,12 +37,12 @@ Con las credenciales ya en texto plano completamente nos logueamos en el panel d
 ![JoomlaAdministrator](images/dailyBugle/joomlaAdmin.png)
 
 Una vez dentro del panel de administración, nuestro plan es intentar subir una reverse, o sustituir un archivo existente por una reverse en código php, finalmente vamos a realizar lo segundo.  
-En mi caso, me dió bastantes problemas al tener varios templates...accedí a la pestaña Manager y luego a Manage de nuevo para desplegar todas las extensiones, buscamos los templates en la columna donde dice "Type", marcamos todas y le damos a "Uninstall", no os preocupéis, el Template por defecto no nos dejará borrarlo y ahora cuando accedamos a los templates solo tendremos uno, así que no habrá perdida para seleccionar uno u otro.  
-En mi caso, modifiqué el archivo "index.php" y coloqué mi reverse shell en su lugar.
+En mi caso, me dió bastantes problemas al tener varios templates...accedí a la pestaña Manager y luego a Manage de nuevo para desplegar todas las extensiones, buscamos los templates en la columna donde dice "Type", marcamos todas y le damos a "Uninstall", no os preocupéis, el Template por defecto no nos dejará borrarlo y ahora cuando accedamos a los templates solo tendremos uno, así que no habrá pérdida para seleccionar uno u otro.  
+En mi caso, modifiqué el archivo "index.php"(no es lo ideal para un entorno real, puede enfadarse nuestro cliente, pero como esto es un entorno controlado no hay problema) y coloqué mi reverse shell en su lugar.
 
 ![JoomlaReverse](images/dailyBugle/reverse.png)
 
-Dejamos nuestra bash en escucha por el puerto que le pusimos a la reverse y listo, estamos dentro, en este caso con el usuario "Apache" un usuario sin privilegios.
+Dejamos nuestra bash en escucha por el puerto que le pusimos a la reverse y listo, estamos dentro, en este caso con el usuario "Apache", un usuario sin privilegios.
 
 ![apacheUser](images/dailyBugle/apacheUser.png)
 
@@ -53,16 +53,17 @@ Para mi sorpresa, este script de enumeración ha conseguido una contraseña en t
 
 ![sshPass](images/dailyBugle/sshPass.png)
 
-Probamos esta clave con el usuario que encontramos en el directorio home del sistema y ¡Bingo! estamos dentro con un usuario privilegiado.  
+Probamos esta clave con el usuario que encontramos en el directorio home del sistema contra el servicio de SSH y ¡Bingo! estamos dentro con un usuario privilegiado.  
 Cogemos la flag de User de su directorio home y comenzamos con la escalación de privilegios.
 
 ![userFlag](images/dailyBugle/userFlag.png)
 
-Como siempre suelo realizar al tener contraseña del usuario, vamos a probar el comando ```"sudo -l"``` para ver los privilegios que tiene este como ROOT. Vemos que tiene privilegios para ejecutar el comando ```"yum"```. 
+Como siempre suelo realizar al tener contraseña del usuario, vamos a probar el comando ```"sudo -l"``` para ver los privilegios que tiene este como ROOT.  
+Vemos que tiene privilegios para ejecutar el comando ```"yum"```. 
 
 ![sudo-l](images/dailyBugle/sudo-l.png)
 
-Así que accedemos a https://gtfobins.github.io/ y realizamos lo que vemos para poder ser ROOT.
+Así que accedemos a [https://gtfobins.github.io/] y realizamos lo que vemos en la siguiente imagen para poder ser ROOT.
 
 ![RootFlag](images/dailyBugle/rootFlag.png)
 
