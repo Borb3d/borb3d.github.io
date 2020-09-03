@@ -14,6 +14,8 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 *  [**1. Agent Sudo**](AgentSudo.md)
 *  [**2. Bounty Hacker**](bountyHacker.md)
 *  [**3. Kiba**](kiba.md)
+*  [**4. DailyBugle](dailyBugle.md)
+*  [**5. Wonderland]()Próximamente...
 
 ### HackTheBox (HTB)
 Estas WriteUps las iré colocando conforme vayan retirando máquinas activas.
