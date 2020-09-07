@@ -77,7 +77,7 @@ Examinamos más a fondo el programa y vemos que el comando para sacar la hora no
 
 ![Path](images/wonderland/datePath.png)
 
-Ejecutamos ahora sí, el programa llamado "TeaParty" de nuevo y listo, ahora somos el usuario "hatter", échamos un ojo a su directorio y vemos un archivo llamado "password.txt" con la pass de este usuario, así que accedemos por ssh para trabajar mejor.  
+Ejecutamos ahora sí, el programa llamado "TeaParty" de nuevo y listo, ahora somos el usuario "hatter", echamos un ojo a su directorio y vemos un archivo llamado "password.txt" con la pass de este usuario, así que accedemos por ssh para trabajar mejor.  
 Ejecutamos nuevamente el comando ```"sudo -l"``` y vemos que este usuario no se encuentra en el archivo "sudoers" por lo que no puede ejecutar este comando...(¿hemos descendido de privilegios?).
 
 ![hatterSudo](images/wonderland/hatterSudo.png)
