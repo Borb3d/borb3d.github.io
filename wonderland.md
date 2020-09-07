@@ -11,7 +11,8 @@ Comenzamos como siempre realizando una enumeración de los puertos con nmap, per
 ![nmap1](images/wonderland/nmap1.png)
 ![nmap2](images/wonderland/nmap2.png)
 
-Esta máquina tiene solo el puerto 22 y el 80 abierto y no parece tener demasiadas cosas que buscar solo con esta información, así que accedemos a la web y vemos un pequeño texto sobre el tema "Alicia en el país de las maravillas" y la imagen del conejo. Si examinamos el conejo y analizamos la URL de esta imagen vemos un directorio "img", accedemos a él y vemos 3 imagenes, y 2 de ellas son la misma pero les cambia el color y el formato...curioso.
+Esta máquina tiene solo el puerto 22 y el 80 abierto y no parece tener demasiadas cosas que buscar solo con esta información, así que accedemos a la web y en la página principal vemos un pequeño texto sobre el tema "Alicia en el país de las maravillas" y la imagen del conejo.  
+Si examinamos el conejo y analizamos la URL de esta imagen vemos un directorio "img", accedemos a él y vemos 3 imagenes, y 2 de ellas son la misma pero les cambia el color y el formato... curioso.
 
 ![img](images/wonderland/img.png)
 
@@ -32,9 +33,9 @@ Como vemos, hemos encontrado un fichero .txt dentro de una de las imágenes (la 
 
 Dejo arriba también la imagen de la búsqueda con dirsearch ya que al leer esta "pista" y ver que dirsearch había sacado un directorio solo con la letra "r", no necesito saber más.  
 Accedo a este directorio "r" y aparece este texto.
-<Would you tell me, please, which way I ought to go from here?
+> Would you tell me, please, which way I ought to go from here?
 
-Lo que me hace pensar...tengo que colocar cada letra de la pista en un directorio hasta crear la palabra.
+Lo que me hace pensar... tengo que colocar cada letra de la pista en un directorio hasta crear la palabra.
 
 ![r a b b i t](images/wonderland/r-a-b-b-i-t.png)
 
