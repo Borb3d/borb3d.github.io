@@ -54,7 +54,7 @@ Le echamos un vistazo rápido al fichero y vemos que hace uso de la librería "r
 ![sudo-l](images/wonderland/sudo-l.png)
 
 Para crear esta "librería falsa" lo único que debemos hacer es:
-* Crear en el directorio que está el programa un archivo con el nombre de la librería que usa con la extensión ".py".
+* Crear en el directorio que está el programa un archivo con el nombre de la librería que usa, con la extensión ".py".
 * Agregarle el código que queremos que ejecute.
 * Darle permisos de ejecución "chmod +x"
 
