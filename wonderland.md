@@ -1,7 +1,8 @@
 # Wonderland WriteUp
 Volver al [Indice](README.md)
 
-Esta máquina ha sido creada por "NinjaJc01", tiene una dificultad de "Medium" y decir que, personalmente, me ha encantado la sala. Quizás si tengo que ponerle un pero demasiado cambio de usuario pero en sí muy buena en su totalidad.
+Esta máquina ha sido creada por "NinjaJc01", tiene una dificultad de "Medium" y decir que, personalmente, me ha encantado la sala.  
+Quizás, si tengo que ponerle un pero, tiene demasiados cambios de usuario pero en sí muy buena en su totalidad.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## *# Enumeración*
