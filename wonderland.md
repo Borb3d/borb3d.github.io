@@ -41,7 +41,7 @@ Lo que me hace pensar... tengo que colocar cada letra de la pista en un director
 
 ## *# Explotación*
 En el código fuente de esta nueva página hemos encontrado las credenciales en texto plano de uno de los usuarios, accedemos vía SSH y como vemos en la imagen que dejo a continuación, en el directorio home de este usuario, ¿está la flag de root?, y veo que en la "ayuda" de la flag de user dice.
-<Everything is upside down here.
+> Everything is upside down here.
 
 Así que intento buscar la flag de user en el directorio de root y ¡perfecto!, tenemos la flag de User.
 
