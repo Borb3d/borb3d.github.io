@@ -72,7 +72,7 @@ Según vemos solo saca un texto con la hora actual, se queda parado (intentamos 
 
 ![catTeaParty](images/wonderland/catTeaParty.png)
 
-Examinamos más a fondo el programa y vemos que el comando para sacar la hora no tiene ruta absoluta así que...PATH hijacking de nuevo, solo que esta vez, debemos modificar el path para que coja primero el directorio que le digamos.  
+Examinamos más a fondo el programa y vemos que el comando para sacar la hora no tiene ruta absoluta así que... PATH hijacking de nuevo, solo que esta vez, debemos modificar el path para que coja primero el directorio que le digamos.  
 * Modificar el PATH: export PATH="directorio que queramos":$PATH
 
 ![Path](images/wonderland/datePath.png)
