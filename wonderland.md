@@ -22,7 +22,7 @@ El comando que he usado para hacer la "Stego" ha sido:
 * Este comando solo te revela si tiene o no algo oculto, para poder extraerlo lo hacemos con el siguiente comando.
 * ```steghide extract -sf "fichero"```
   * extract => Para extraer lo que tiene
-  * -sf => Escribe el resultado en el "nombre" del archivo.
+  * -sf => (--stegofile), osea, el archivo que tiene el stego.
 
 ![stego](images/wonderland/steg.png)
 
