@@ -6,7 +6,7 @@ En este caso veremos como poder aplicarle fuerza bruta a un "passphrase" de SSH 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## *# Enumeración*
-Comenzamos realizando una enumeración de todos los 65535 puertos con nmap y recopilando información de los servicios y aplicaciones que contienen estos puertos.
+Comenzamos realizando una enumeración de los 65535 puertos con nmap y recopilando información de los servicios y aplicaciones que contienen estos puertos.
 
 ![nmap1](images/gamingServer/nmap1.png)
 ![nmap2](images/gamingServer/nmap2.png)
