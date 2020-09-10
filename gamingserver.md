@@ -23,12 +23,14 @@ Al no encontrar nada más a simple vista lanzamos una búsqueda con dirsearch pa
 Comenzamos a enumerar los directorios que nos ha encontrado dirsearch.
 * robots.txt => Contiene un directorio llamado "/uploads/" así que entramos y vemos que contiene 3 archivos.
 
-      *  dict.lst => Parece un diccionario con contraseñas por lo que lo descargamos y lo dejamos guardado para realizar fuerza bruta después por si fuese necesario.
+      *  dict.lst => Parece un diccionario con contraseñas por lo que lo descargamos y 
+                     lo dejamos guardado para realizar fuerza bruta después por si fuese necesario.
 
 ![diccionario](images/gamingServer/dict.png)
  
       *  manifesto.txt => Es simplemente un texto al que no podemos sacarle demasiado provecho.
-      *  meme.jpg => Una imagen a la que de momento no vamos a echarle mucha cuenta (ya que tenemos un diccionario y un posible usuario)
+      *  meme.jpg => Una imagen a la que de momento no vamos a echarle mucha cuenta 
+                     (ya que tenemos un diccionario y un posible usuario)
 * secret => Contiene un archivo llamado "secretkey" con una id_rsa como contenido, así que ¡perfecto! lo descargamos e intentamos acceder vía ssh.
 
 ![id_rsa](images/gamingServer/id_rsa.png)
