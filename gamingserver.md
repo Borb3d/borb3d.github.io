@@ -11,7 +11,7 @@ Comenzamos realizando una enumeración de los 65535 puertos con nmap y recopilan
 ![nmap1](images/gamingServer/nmap1.png)
 ![nmap2](images/gamingServer/nmap2.png)
 
-Vemos que simplemente tenemos 2 puertos abiertos de los cuales no podemos explotar sin entrar más en profundidad en ellos.
+Vemos que simplemente tenemos 2 puertos abiertos de los cuales no podemos explotar sin entrar más en profundidad en ellos.  
 En el código fuente de la página http principal, al final de este, vemos un comentario hacia una persona "john". Parece que ya tenemos un usuario por ahí.  
 
 ![user](images/gamingServer/user.png)
