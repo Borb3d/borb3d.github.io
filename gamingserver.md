@@ -22,7 +22,7 @@ Al no encontrar nada más a simple vista lanzamos una búsqueda con dirsearch pa
 
 Comenzamos a enumerar los directorios que nos ha encontrado dirsearch.
 * robots.txt => Contiene un directorio llamado "/uploads/" así que entramos y vemos que contiene 3 archivos.
-   *  dict.lst => Parece un diccionario por lo que los descargamos y lo dejamos guardado para realizar fuerza bruta después por si fuese necesario.
+   *  dict.lst => Parece un diccionario con contraseñas por lo que lo descargamos y lo dejamos guardado para realizar fuerza bruta después por si fuese necesario.
 
 ![diccionario](images/gamingServer/dict.png)
 
