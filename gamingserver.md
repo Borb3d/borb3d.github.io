@@ -38,12 +38,12 @@ Comenzamos a enumerar los directorios que nos ha encontrado dirsearch.
 
 Al intentar acceder mediante el usuario "john" y la id_rsa que hemos conseguido nos pide una "passphrase" para poder acceder a la máquina... Creo que es momento de emplear el diccionario que dejamos de lado.  
 Para poder pasar esta key "id_rsa" a un formato al que john pueda entenderlo vamos a emplear la herramienta "ssh2john".  
-Simplemente le pasamos el archivo con la key a esta herramienta y sacamos el resultado saliente en otro archivo diferente.
+Simplemente le pasamos el archivo con la key a esta herramienta y sacamos el resultado saliente en otro archivo diferente.  
 ``` python ssh2john.py id_rsa > id_rsa.hash ```
 
 ![john1](images/gamingServer/john1.png)
 
-Ya tenemos nuestra key en un formato para john, así que vamos a pasarselo a ver que nos encuentra.
+Ya tenemos nuestra key en un formato para john, así que vamos a pasarselo a ver que nos encuentra.  
 ``` john id_rsa.hash --wordlist=dict.lst ```
 
 ![john2](images/gamingServer/john2.png)
