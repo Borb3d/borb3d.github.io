@@ -31,6 +31,7 @@ Comenzamos a enumerar los directorios que nos ha encontrado dirsearch.
       *  manifesto.txt => Es simplemente un texto al que no podemos sacarle demasiado provecho.
       *  meme.jpg => Una imagen a la que de momento no vamos a echarle mucha cuenta 
                      (ya que tenemos un diccionario y un posible usuario)
+
 * secret => Contiene un archivo llamado "secretkey" con una id_rsa como contenido, así que ¡perfecto! lo descargamos e intentamos acceder vía ssh.
 
 ![id_rsa](images/gamingServer/id_rsa.png)
