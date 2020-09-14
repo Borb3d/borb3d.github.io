@@ -17,6 +17,7 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 *  [**4. DailyBugle**](dailyBugle.md)
 *  [**5. Wonderland**](wonderland.md)
 *  [**6. GamingServer**](gamingserver.md)
+*  [**7. Ghizer**](ghizer.md)
 
 ### HackTheBox (HTB)
 Estas WriteUps las iré colocando conforme vayan retirando máquinas activas.
