@@ -43,7 +43,7 @@ Volviendo a realizar una búsqueda por Google encontramos la ruta del archivo de
 ![config](images/ghizer/configCredentials.png)
 
 ## *# Enumeración*
-Ya con las credenciales las queremos probar en el Wordpress, pero nos dice en la página principal que la ruta "wp_admin" está protegida para difultar su búsqueda. Sin problema, más abajo tenemos el botón "Log in", cual nos redirecciona a esta ruta.  
+Ya con las credenciales procedemos a probarlas en el Wordpress, pero nos dice en la página principal que la ruta "wp_admin" está protegida para difultar su búsqueda. Sin problema, más abajo tenemos el botón "Log in", cual nos redirecciona a esta ruta.  
 
 ![login](images/ghizer/wordpressLogin.png)
 
@@ -52,7 +52,8 @@ Ya dentro del panel de Wordpress, miramos cual es el tema que estamos usando y c
 ![tema](images/ghizer/wordpressTheme.png)
 ![reverse](images/ghizer/reverseWordpress.png)
 
-Pero ¡NO!, nos da un error y no podemos acceder mediante este método. Después de enumerar el WordPress, nos damos cuenta de que hemos llegado a un "Rabbit Hole"...  
+Pero ¡NO!, nos da un error y no podemos acceder mediante este método.  
+Después de enumerar el WordPress, nos damos cuenta de que hemos llegado a un "Rabbit Hole"...  
 
 ## *# Explotación2*
 Volvemos a nuestra "shell" en el puerto 80 que conseguimos anteriormente y nos lanzamos una ReverseShell de python (ya que sabemos que está python instalado) y ahora sí, podemos escalarnos a una shell interactiva del usuario www-data. Ahora bien vamos al directorio home del usuario Verónica y tenemos que escalar privilegios a este usuario ya que no podemos coger su flag.  
