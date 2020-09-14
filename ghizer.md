@@ -56,7 +56,8 @@ Pero ¡NO!, nos da un error y no podemos acceder mediante este método.
 Después de enumerar el WordPress, nos damos cuenta de que hemos llegado a un "Rabbit Hole"...  
 
 ## *# Explotación2*
-Volvemos a nuestra "shell" en el puerto 80 que conseguimos anteriormente y nos lanzamos una ReverseShell de python (ya que sabemos que está python instalado) y ahora sí, podemos escalarnos a una shell interactiva del usuario www-data. Ahora bien vamos al directorio home del usuario Verónica y tenemos que escalar privilegios a este usuario ya que no podemos coger su flag.  
+Volvemos a nuestra "shell" en el puerto 80 que conseguimos anteriormente y nos lanzamos una ReverseShell de python (ya que sabemos que está python instalado) y ahora sí, podemos escalarnos a una shell interactiva del usuario www-data.  
+Ahora bien, vamos al directorio home del usuario Verónica y vemos que vamos a tener que escalar privilegios a este usuario ya que no podemos coger su flag.  
 En este directorio vemos una carpeta de ```"ghidra"``` con su versión
 
 ![ghidra](images/ghizer/ghidra.png)
@@ -85,6 +86,7 @@ Realizando una enumeración del sistema (en mi caso usé la herramienta LinPeas)
 
 Como vemos en la imagen anterior, es un script sencillo que simplemente encripta en base64 una frase.
 > tryhackme is the best
+
 Peeero, está usando la librería "base64", por lo que podemos falsearla. Vamos a ello.  
 Creamos un archivo llamado ```"base64.py"``` y colocamos en el nuestra reverse shell en python.
 
