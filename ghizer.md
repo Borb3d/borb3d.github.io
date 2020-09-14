@@ -2,7 +2,7 @@
 Volver al [Indice](README.md)
 
 Vamos a darle hoy un par de vueltas a la máquina ¡Ghizer!, creada por "Stuxnet", tiene una dificultad de "Medium" y en ella vamos a explotar varias cositas.  
-Veremos como explotar una aplicación de encuestas llamada "LimeSurvey", entraremos en un "rabbit hole" con un wordpress y lo más complicado,explotaremos Ghidra a través de jdb (Java Debugger) aprovechándonos de una vulnerabilidad.  
+Veremos como explotar una aplicación de encuestas llamada "LimeSurvey", entraremos en un "rabbit hole" con un wordpress (posteriormente Stuxnet me dijo que no, que de aquí se puede avanzar) y lo más complicado,explotaremos Ghidra a través de jdb (Java Debugger) aprovechándonos de una vulnerabilidad.  
 Hecho esto, la escalada de privilegios es sencilla.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
