@@ -1,7 +1,7 @@
 # TomGhost WriteUp
 Volver al [Indice](README.md)
 
-Dentro de poco tendremos que recopilar las WriteUps por mes o algo...decidme como veis mejor que lo recopile.  
+Dentro de poco tendremos que recopilar las WriteUps por mes o algo... Decidme como veis mejor que lo recopile.  
 Bueno, hoy traemos "TomGhost" otra máquina de nuestro compañero "Stuxnet" pero esta vez, a parte de ser de dificultad "Easy" no me di cuenta que era de él hasta que lo vi en un archivo, jeje
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
