@@ -43,8 +43,8 @@ El archivo está protegido por una contraseña a parte del archivo ".asc", debem
 
 Ya con nuestro archivo en el "idioma" de john, se lo pasamos fácilmente y sacamos nuestra clave.
 
-![passphrase](images/tomGhost/passphrase.png)
 ![johnCrack](images/tomGhost/johnCrack.png)
+![passphrase](images/tomGhost/passphrase.png)
 
 Abrimos el archivo, colocamos nuestra "Passphrase" y ya podemos leer el fichero, el cual contiene las credenciales del usuario Merlin.
 
