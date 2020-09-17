@@ -48,6 +48,6 @@ Ya con nuestro archivo en el "idioma" de john, se lo pasamos fácilmente y sacam
 
 Importamos el archivo con la key, colocamos nuestra "Passphrase" y ya podemos leer el fichero, el cual contiene las credenciales del usuario Merlin.
 
-Ya con el usuario Merlin realizamos el comando ```"sudo -l"``` y, ahora si, podemos ejecutar un archivo binario ```"zip"``` como root y sin contraseña, lo explotamos como siempre siguiendonos de la página [GTFOBins](https://gtfobins.github.io/) y una vez más...¡Somos ROOT!
+Ya con el usuario Merlin realizamos el comando ```"sudo -l"``` y, ahora sí, podemos ejecutar un archivo binario ```"zip"``` como root y sin contraseña, lo explotamos como siempre siguiéndonos de la página [GTFOBins](https://gtfobins.github.io/) y una vez más...¡Somos ROOT!
 
 ![rootFlag](images/tomGhost/rootFlag.png)
