@@ -4,9 +4,9 @@ Aquí dejaré un listado de las WriteUps que vaya realizando con un enlace a cad
 
 Primeramente decir que nose si por suerte o no, no me gustan las herramientas automatizadas como Metasploit, así que siempre intentaré no usarlo a menos que no me quede más remedio.
 
-Serán bienvenidas tanto críticas como diferentes puntos de vista u otras formas de acceder a las máquinas así como conversaciones sobre el tema.
+Serán bienvenidas tanto críticas como diferentes puntos de vista u otras formas de acceder a las máquinas así como conversaciones sobre el tema, ya que llevo poco tiempo en esto me gustaría aprender con vuestros "Feedbacks".
 
-Pueden contactarme por email a: borb3d@gmail.com o en telegram como "borb3d".
+Pueden contactarme por email a: borb3d@gmail.com y en telegram o twitter como "borb3d".
 
 Gracias por su atención y os dejo por aquí las WriteUps!
 
