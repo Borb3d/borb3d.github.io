@@ -33,7 +33,7 @@ Cogemos nuestra flag de user (que la encontramos en el directorio del otro usuar
 
 ## *# Post-Explotación*
 Lanzamos el comando ```"sudo -l"``` como de costumbre pero, en este caso, no nos encontramos dentro del fichero "sudoers" por lo que no tenemos privilegios de ROOT.  
-Realizamos una enumeración básica del sistema y vemos en el directorio de este usuario 2 archivos, "credential.gpg" y "tryhackme.asc", vamos a abrir ese archivo para ver que contiene (nos lo descargamos en nuestro equipo atacante para trabajar más cómdos).
+Realizamos una enumeración básica del sistema y vemos en el directorio de este usuario 2 archivos, "credential.gpg" y "tryhackme.asc", vamos a abrir ese archivo para ver que contiene (nos lo descargamos en nuestro equipo atacante para trabajar más cómodos).
 
 ![pgp](images/tomGhost/archivoPgp.png)
 
