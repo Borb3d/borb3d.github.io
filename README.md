@@ -10,7 +10,7 @@ Pueden contactarme por email a: borb3d@gmail.com y en telegram o twitter como "b
 
 Gracias por su atención y os dejo por aquí las WriteUps!
 
-### TryHackMe (THM)  <img src="https://tryhackme-badges.s3.amazonaws.com/borb3d.png" alt="TryHackMe">
+<img src="https://tryhackme-badges.s3.amazonaws.com/borb3d.png" alt="TryHackMe">
 *  [**1. Agent Sudo**](AgentSudo.md)
 *  [**2. Bounty Hacker**](bountyHacker.md)
 *  [**3. Kiba**](kiba.md)
