@@ -1,7 +1,7 @@
 # BoilerCTF WriteUp
 Volver al [Indice](README.md)
 
-Hoy traigo una máquina de THM de nuevo, está creada por el usuario "MrSeth6797" y tiene una dificultad de "Medium" y en ella tendremos que descifrar una frase para encontrar una pista de por donde tenemos que tirar y seguir enumerando la máquina para poder escalar a un usuario con shell y encontrar un binario con SUID para poder realizar el privesc.
+Hoy traigo una máquina de THM de nuevo, está creada por el usuario "MrSeth6797" y tiene una dificultad de "Medium" y en ella deberemos descifrar una frase para encontrar una pista donde nos indique por donde tenemos que tirar y seguir enumerando la máquina para poder escalar a un usuario con shell y encontrar un binario con SUID para poder realizar el privesc.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## *# Enumeración*
