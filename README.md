@@ -30,4 +30,4 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 
 
 <a href="https://www.hackthebox.eu/home/users/profile/363852"> <img src="https://www.hackthebox.eu/badge/image/363852"></a>
-*  [Lame...Proximamente]()
+*  [Lame...Próximamente]()
