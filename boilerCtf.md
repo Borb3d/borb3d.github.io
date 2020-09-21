@@ -42,7 +42,7 @@ Accedemos vía SSH con este nuevo usuario y ahora si, cogemos la flag de User.
 
 ## *# Post-Explotación*
 Hacemos una enumeración básica del sistema y vemos que hay un binario ```"find"``` con SUID activado...  
-Vamos a [GTFOBins](https://gtfobins.github.io/) , buscamos el binario y lo explotamos.
+Vamos a [GTFOBins](https://gtfobins.github.io/), buscamos el binario y lo explotamos.
 
 ![SUID](images/boilerCTF/SUIDfiles.png)
 ![rootFlag](images/boilerCTF/rootFlag.png)
