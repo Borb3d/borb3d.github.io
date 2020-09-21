@@ -8,6 +8,10 @@ Serán bienvenidas tanto críticas como diferentes puntos de vista u otras forma
 
 Pueden contactarme por email a: borb3d@gmail.com y en telegram o twitter como "borb3d".
 
+edit: Voy a ir realizando de vez en cuando máquinas de HTB a partir de ahora, voy a seguir una plantilla de máquinas "estilo OSCP", no es que me esté preparando para ello pero creo que es la mejor ruta a coger para evolucionar como pretendo.  
+Dejo por aquí el enlace a estas máquinas para quien quiera verlas.
+[Máquinas HTB estilo OSCP](https://miro.medium.com/max/700/1*2h8wk0uAnDReRRPlCXMX7g.png)
+
 Gracias por su atención y os dejo por aquí las WriteUps!
 
 
@@ -24,5 +28,6 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 *  [**8. TomGhost**](tomghost.md)
 *  [**9. BoilerCTF**](boilerCtf.md)
 
-### HackTheBox (HTB)
-Estas WriteUps las iré colocando conforme vayan retirando máquinas activas.
+
+<a href="https://www.hackthebox.eu/home/users/profile/363852"> <img src="https://www.hackthebox.eu/badge/image/363852"></a>
+*  [**1. Lame**]()
