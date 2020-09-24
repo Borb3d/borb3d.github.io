@@ -16,8 +16,7 @@ Como vemos, tiene bastantes puertos abiertos, así que vamos a ir enumerándolos
 * Puerto 21 => Tiene un FTP con acceso anónimo habilitado pero no contiene nada (tiene una vulnerabilidad en Metasploit si buscamos con ```"searchsploit")```
 * Puerto 22 => Un puerto de SSH con la versión  4.7 (también con alguna que otra vulnerabilidad con Metasploit, y sin él con autenticación).
 * Puerto 139 y 445 => Aquí encontramos samba, es un servicio de transferencia de archivos, aquí buscamos por Google y encontramos un exploit en Python para la versión 3.0.20, que es la que tenemos.
-  * Dejo por aquí enlace a la página donde encontré el exploit.
-  * [smb-3.0.20](https://github.com/macha97/exploit-smb-3.0.20/blob/master/exploit-smb-3.0.20.py)
+  * Dejo por aquí enlace a la página donde encontré el exploit => [smb-3.0.20](https://github.com/macha97/exploit-smb-3.0.20/blob/master/exploit-smb-3.0.20.py)
 
 pd: Decir que todo lo que se puede realizar con Metasploit lo podemos realizar manualmente, sea más dificil o no, pero como estuve enumerando por encima primero para ver con lo que me encontraba no saqué la clave para los 2 puertos anteriores.
 
