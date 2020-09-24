@@ -1,8 +1,9 @@
 # Lame WriteUp
 Volver al [Indice](README.md)
 
-Comenzamos con la primera máquina que voy a realizar su WriteUp en HTB, en este caso estaremos ante la máquina "Lame", creada por "Ch4p", tiene una dificultad de 2.6 sobre 10 y una puntuación de 4.4 sobre 5...  
-La verdad que siemrpe había escuchado que era una máquina muy sencilla y pensé que era porque tenía una vulnerabilidad en Metasploit que te facilitaba la tarea, pero, sin Metasploit ha resultado igual de sencilla sinceramente, aunque muy buena para conocer conceptos.
+Comenzamos con la primera máquina que voy a realizar su WriteUp en HTB, en este caso estaremos ante la máquina "Lame", creada por "Ch4p".  
+Tiene una dificultad de 2.6 sobre 10 y una puntuación de 4.4 sobre 5...  
+La verdad que siempre había escuchado que era una máquina muy sencilla y pensé que era porque tenía una vulnerabilidad en Metasploit que te facilitaba la tarea, pero, sin Metasploit ha resultado igual de sencilla sinceramente, aunque muy buena para conocer conceptos.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## *# Enumeración*
