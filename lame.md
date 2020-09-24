@@ -8,8 +8,8 @@ La verdad que siemrpe había escuchado que era una máquina muy sencilla y pens�
 ## *# Enumeración*
 Comenzamos realizando una enumeración básica del sistema con nmap.
 
-[nmap1](images/htb/lame/nmap1.png)
-[nmap2](images/htb/lame/nmap2.png)
+![nmap1](images/htb/lame/nmap1.png)
+![nmap2](images/htb/lame/nmap2.png)
 
 Como vemos, tiene bastantes puertos abiertos, así que vamos a ir enumerándolos.
 * Puerto 21 => Tiene un FTP con acceso anónimo habilitado pero no contiene nada (tiene una vulnerabilidad en Metasploit si buscamos con ```"searchsploit"```)
@@ -22,10 +22,10 @@ pd: Decir que todo lo que se puede realizar con Metasploit lo podemos realizar m
 
 Ahora si, con este exploit en Python lo abrimos y vemos que tiene el código de una reverse shell generada con msfvenom, copiamos el comando y lo adaptamos a nuestra máquina.
 
-[exploit&comando](images/htb/lame/exploitYcomando.png)
+![exploit&comando](images/htb/lame/exploitYcomando.png)
 
 ## *# Explotación*
 Una vez completado el exploit con el código de nuestra reverse, lo lanzamos y increíblemente hemos accedido a la máquina directamente como ROOT, así que...  
 Una vez más, ¡Somos ROOT!
 
-[exploit&flags](images/htb/lame/exploitYflags.png)
+![exploit&flags](images/htb/lame/exploitYflags.png)
