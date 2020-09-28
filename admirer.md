@@ -77,7 +77,7 @@ Con esto ya podríamos volver a la aplicación web y acceder con nuestros datos.
 
 Y ¡estamos dentro!
 
-![dbOkLog](images/htb/admirer/dbLog.png)
+![dbOkLog](images/htb/admirer/dbOkLog.png)
 
 Ya dentro de la aplicación, accedemos al apartado "Comando SQL" para poder ejecutar nuestra consulta y ver datos que no se deberían ver.
 
