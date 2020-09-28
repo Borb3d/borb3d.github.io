@@ -31,4 +31,4 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 
 <a href="https://www.hackthebox.eu/home/users/profile/363852"> <img src="https://www.hackthebox.eu/badge/image/363852"></a>
 *  [**1. Lame**](lame.md)
-*  [**2. Legacy** Proximamente...]()
+*  [**2. Legacy**](legacy.md)
