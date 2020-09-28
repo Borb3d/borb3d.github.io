@@ -83,8 +83,8 @@ Ya dentro de la aplicación, accedemos al apartado "Comando SQL" para poder ejec
 
 En este apartado lanzamos la siguiente consulta:
 > load data local infile '../index.php'
-> into table test
-> fileds terminated by "/n"
+  into table test
+  fileds terminated by "/n"
 
 ![queryOK](images/htb/admirer/queryOk.png)
 
