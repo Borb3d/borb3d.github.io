@@ -28,8 +28,7 @@ Lo colocamos a ver que contiene y vemos que nos da un error 403(Forbidden).
 
 ![robots](images/htb/admirer/robots.png)
 
-Pero... Este error 403 no nos impide lanzar una busqueda con dirsearch a ese directorio...  
-Si encontramos algo podríamos acceder a el saltándonos este error.
+Pero... Este error 403 no nos impide lanzar una busqueda con dirsearch a ese directorio... Si encontramos algo podríamos acceder a el saltándonos este error.
 
 ![dirsearch2](images/htb/admirer/dirsearch2.png)
 
