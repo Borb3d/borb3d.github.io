@@ -82,9 +82,9 @@ Y ¡estamos dentro!
 Ya dentro de la aplicación, accedemos al apartado "Comando SQL" para poder ejecutar nuestra consulta y ver datos que no se deberían ver.
 
 En este apartado lanzamos la siguiente consulta:
-> load data local infile '../index.php'
-  into table test
-  fileds terminated by "/n"
+> load data local infile '../index.php'  
+into table test  
+fields terminated by "/n"
 
 ![queryOK](images/htb/admirer/queryOk.png)
 
