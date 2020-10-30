@@ -1,5 +1,5 @@
 # Hacking Android
-Volver al [Indice](/README.md)
+Volver al [Indice](../README.md)
 <a name="top"></a>
 
 Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera llamar lo he hecho para mí, para practicar y recordar lo que estoy haciendo.  
