@@ -1,6 +1,9 @@
-## Bienvenidos a las WritesUps de Borb3d
+## Bienvenidos a las GithubPage de Borb3d
 
-Aquí dejaré un listado de las WriteUps que vaya realizando con un enlace a cada una de ellas.
+He pensado en modificar un poco el enfoque de la página. Además de las WriteUps, voy a subir "apuntes" que voy a ir haciendo recopilando cosillas que vaya haciendo para poder tenerlo como guías a la hora de necesitarlo yo personalmente o tener un "Cheat Sheet" simplemente. Si a su vez os puede servir de ayuda a cualquiera de vosotros, pues ¿porque no?.  
+(Mandadme un email o mensaje en cualquiera de mis redes para ver que opináis y saber si os apetece que suba algo y que pueda prepararlo)
+
+Dicho esto, dejo un poco mis pensamientos acerca de las herramientas, críticas y mi contacto, **¡Gracias!**  
 
 Primeramente decir que nose si por suerte o no, no me gustan las herramientas automatizadas como Metasploit, así que siempre intentaré no usarlo a menos que no me quede más remedio.
 
@@ -15,20 +18,22 @@ Dejo por aquí el enlace a estas máquinas para quien quiera verlas.
 Gracias por su atención y os dejo por aquí las WriteUps!
 
 
+# APUNTES
+*  [**1. Hacking Android**](apuntes/hackingAndroid.md)
 
 
 <img src="https://tryhackme-badges.s3.amazonaws.com/borb3d.png" alt="TryHackMe">
-*  [**1. Agent Sudo**](AgentSudo.md)
-*  [**2. Bounty Hacker**](bountyHacker.md)
-*  [**3. Kiba**](kiba.md)
-*  [**4. DailyBugle**](dailyBugle.md)
-*  [**5. Wonderland**](wonderland.md)
-*  [**6. GamingServer**](gamingserver.md)
-*  [**7. Ghizer**](ghizer.md)
-*  [**8. TomGhost**](tomghost.md)
-*  [**9. BoilerCTF**](boilerCtf.md)
+*  [**1. Agent Sudo**](thm/AgentSudo.md)
+*  [**2. Bounty Hacker**](thm/bountyHacker.md)
+*  [**3. Kiba**](thm/kiba.md)
+*  [**4. DailyBugle**](thm/dailyBugle.md)
+*  [**5. Wonderland**](thm/wonderland.md)
+*  [**6. GamingServer**](thm/gamingserver.md)
+*  [**7. Ghizer**](thm/ghizer.md)
+*  [**8. TomGhost**](thm/tomghost.md)
+*  [**9. BoilerCTF**](thm/boilerCtf.md)
 
 
 <a href="https://www.hackthebox.eu/home/users/profile/363852"> <img src="https://www.hackthebox.eu/badge/image/363852"></a>
-*  [**1. Lame**](lame.md)
-*  [**2. Admirer**](admirer.md)
+*  [**1. Lame**](htb/lame.md)
+*  [**2. Admirer**](htb/admirer.md)
