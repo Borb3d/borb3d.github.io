@@ -131,7 +131,8 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
   * Dentro de este directorio vemos otro directorio llamado "smali".
   * Dentro de este directorio podemos ver el directorio "com" y dentro de este tenemos el directorio "metasploit".
   * Vamos a comprimir el directorio "smali" de nuestra APK maliciosa para descomprimirlo directamente dentro del mismo directorio dentro de la APK "original".
-    * Podemos realizarlo con el comando (estando ubicados en la raiz del directorio de nuestro payload): ```tar -cf - ./smali | ( cd ../temple; tar -xpf - )``` ==> Gracias S4vitar por el comando
+    * Podemos realizarlo con el comando (estando ubicados en la raiz del directorio de nuestro payload):  
+    ```tar -cf - ./smali | ( cd ../temple; tar -xpf - )``` ==> Gracias S4vitar por el comando
 
 ![tarSmali](/images/apuntes/HackingAndroid/tarSmali.png)
 * 
