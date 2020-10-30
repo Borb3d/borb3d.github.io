@@ -1,5 +1,6 @@
 # Hacking Android
 Volver al [Indice](README.md)
+<a name="top"></a>
 
 Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera llamar lo he hecho para mí, para practicar y recordar lo que estoy haciendo.  
 Partiendo de que lo he elaborado basándome en cursos que he ido ojeando, de plataformas como Udemy, BacktracAcademy, youtube (en especial el vídeo de S4vitar, personalmente me parece bastante bueno su vídeo sobre esto), es posible que veáis bastantes referencias de algunos curso que os podáis encontrar, por lo tanto no es algo que haya realizado yo desde 0, es basado en mi experiencia propia y con ayuda de estos cursos.  
@@ -212,7 +213,7 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 ## Ejecución de exploit en la víctima
 
 Lo primero que debemos hacer es, en este ejemplo, dejar **NGROK** preparado para recibir peticiones TCP (se ve en el apartado [Crear APK maliciosa sencilla](#crear-apk-maliciosa-sencilla).  
-Hecho esto debemos crear un payload con **"msfvenom"** (se ve en el apartado [Crear APK maliciosa sencilla](#crear-apk-maliciosa-sencilla) en este caso, va a ser con una APK descargada desde **"apkmonk"** y modificándola colocándole nuestro payload.  
+Hecho esto debemos crear un payload con **"msfvenom"** (se ve en el apartado [Crear APK maliciosa sencilla](#crear-apk-maliciosa-sencilla)) en este caso, va a ser con una APK descargada desde **"apkmonk"** y modificándola colocándole nuestro payload.  
 Ahora, debemos pasarle a la víctima nuestra APK maliciosa de la forma más ingeniosa que podamos o se nos ocurra. (Al estar en un entorno controlado en red local, simplemente me lo voy a pasar a mi dispositivo)  
 Finalmente debemos dejar **Metasploit** a la escucha con el **multi-handler** por el puerto que le indicamos a **NGROK** (el local) para poder recibir la shell de **Meterpreter.**
 * ```msfconsole``` ó ```msfdb run``` => Para abrir **Metasploit**
@@ -234,5 +235,7 @@ Lo único que nos queda por hacer es abrir la aplicación en nuestra víctima pa
 **¡ENHORABUENA!**, hemos conseguido vulnerar un dispositivo Android de una manera muy sencilla.
 
 >Para cualquier duda, ayuda, queja, sugerencia o reclamación tenéis mi contacto en la página principal.
+
+[Subir](#top)
 
 ![exploited](/images/apuntes/HackingAndroid/exploited.png)
