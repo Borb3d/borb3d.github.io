@@ -157,7 +157,8 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 ![onCreate](/images/apuntes/HackingAndroid/onCreate.png)
 
   * Ahora tenemos que modificar el archivo "AndroidManifest.xml" (En él están los permisos que tiene la app), tenemos que colocar todos los permisos que tiene nuestro payload.
-    * Buscamos los permisos que tiene nuestro payload (```cat AndroidManifest.xml | grep "uses-permission"```)
+    * Buscamos los permisos que tiene nuestro payload  
+     ```cat AndroidManifest.xml | grep "uses-permission"```
 
 ![PermisosAPKmaliciosa](/images/apuntes/HackingAndroid/maliciosaPermisos.png)
 * 
