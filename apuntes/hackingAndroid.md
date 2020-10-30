@@ -184,13 +184,13 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
     * -keysize 2048 => El tamaño que queremos asignarle al algoritmo.
     * -validity => El tiempo, en días, que queremos que tenga validez la key.
   * Nos pedirá una contraeña =>**¡OJO!** es una contraseña para la key, no es la de nuestro sistema.
-  * Después nos irá haciendo unas preguntas sobre quienes somos => Para más credibilidad podemos investigar estos datos de la app que hemos cogido y colocar los mismos.
+  * Después nos irá haciendo unas preguntas sobre quienes somos. (Para más credibilidad podemos investigar estos datos de la app que hemos cogido y colocar los mismos)
   * Ya estaría creada la key.
 
 ![keystore](/images/apuntes/HackingAndroid/keystore.png)
 
 * Ahora con la utilidad ```"jarsigner"``` (que también debe venir preinstalada) vamos a firmar la app:
-  * ```jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore "nombre de la key que hemos creado" "el nombre de la app con nuestro código malicioso" "el alias que le pusimos a la key"
+  * ```jarsigner -sigalg SHA1withRSA -digestalg SHA1 -keystore "nombre de la key que hemos creado" "el nombre de la app con nuestro código malicioso" "el alias que le pusimos a la key"```
     * -sigalg => Le decimos el algoritmo que va a usar para la firma.
     * -digestalg => Le indicamos un algoritmo de resumen.
     * -keystore => Le indicamos el nombre del keystore que nos hemos creado previamente.
