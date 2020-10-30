@@ -109,21 +109,21 @@ Una vez hecho todo esto solo deberíamos dejar en escucha un multi-handler de me
 Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos a hacer es:
 * Obtener una APK legítima y real, de donde queramos...
 * "Destriparla"
-* Modificarla para colocar dentro nuestro payload (y que la app siga ejecutándose normalmente sinq ue el usuario pueda detectar nada)
+* Modificarla para colocar dentro nuestro payload (y que la app siga ejecutándose normalmente sin que el usuario pueda detectar nada)
 * Finalmente volver a compilarla.
 
 ### Empezamos
 * Primero Comenzamos descargando la app que queramos (en mi caso "Temple Run").
   * Antes de nada aconsejaros que probéis que la apk que vamos a descargar sin modificar funciona correctamente en el dispositivo víctima, yo tuve que probar un par de apps antes porque me abrían la sesión y se cerraba la app junto con la sesión y era porque la app que descargué no funcionaba en el dispositivo que yo estaba usando...
-  * [https://www.apkmonk.com/](https://www.apkmonk.com/) => Usé esta página, como usó S4vitar porque descargando desde la PlayStore probé varios y no me funcionaba (puede ser por estar corriendo un Android 5.1, o por tener que profundizar más en el código, pero lo dejé ahí ya que tenía otras vías).
-* Instalamos la aplicación ```"apktool"``` desde la URL: [https://github.com/iBotPeaches/Apktool/releases/download/v2.4.1/apktool_2.4.1.jar](https://github.com/iBotPeaches/Apktool/releases/download/v2.4.1/apktool_2.4.1.jar)
-  * La descargamos desde este enlace porque la que viene en repositorio de Kali/Parrot no es correcta y falla. (comprobar si esto es así, con el comando ```"apktool --version"```, si nos dice que la versión es como en la imagen, la dirty, no nos va a funcionar la compilación de la app maliciosa).
+  * [https://www.apkmonk.com/](https://www.apkmonk.com/) => Usé esta página como usó S4vitar, porque descargando desde la PlayStore probé varios y no me funcionaba (puede ser por estar corriendo un Android 5.1, o por tener que profundizar más en el código, pero lo dejé ahí ya que tenía otras vías).
+* Instalamos la aplicación **"apktool"** desde la URL: [https://github.com/iBotPeaches/Apktool/releases/download/v2.4.1/apktool_2.4.1.jar](https://github.com/iBotPeaches/Apktool/releases/download/v2.4.1/apktool_2.4.1.jar)
+  * La descargamos desde este enlace porque la que viene en repositorio de Kali/Parrot no es correcta y falla. (comprobar si esto es así, con el comando ```"apktool --version"```. Si nos dice que la versión es como en la imagen, la dirty, no nos va a funcionar la compilación de la app maliciosa).
 
 ![apktoolDirty](/images/apuntes/HackingAndroid/apkToolDirty.png)
 
   * Con el comando ```"java -jar apktool_2.4.1.jar"``` podemos ejecutarlo.
-* Vamos a "descomprimir" nuestras 2 APKs (la maliciosa, que es la que hemos creado en el apartado "crear apk maliciosa sencilla", y la real) con esta aplicación que hemos instalado.
-  * java -jar apktool_2.4.1.jar d "nombre de la apk" => Esto nos crea un directorio con el nombre de la apk que hemos "descomprimido".
+* Vamos a "descomprimir" nuestras 2 APKs (la maliciosa, que es la que hemos creado en el apartado [crear apk maliciosa sencilla](#crear-apk-maliciosa-sencilla), y la real) con esta aplicación que hemos instalado.
+  * ```java -jar apktool_2.4.1.jar d "nombre de la apk"``` => Esto nos crea un directorio con el nombre de la apk que hemos "descomprimido".
 
 ![apktoolUse](/images/apuntes/HackingAndroid/apktoolJava.png)
 
@@ -140,7 +140,8 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
     * Para poder encontrar la ubicación de este archivo, si no lo encontramos, podemos usar los siguientes comandos (desde la raiz del directorio).
       * ```grep "MAIN" -b2 AndroidManifest.xml``` => Para buscar la palabra "MAIN" dentro del archivo AndroidManifest.xml y mostrando las 2 líneas que hay por encima.
       * Para conseguir su ruta, tenemos que fijarnos donde dice "android:name=", lo que viene después nos mostrará la ruta que tenemos que seguir hasta el archivo "TempleRunOzActivity.smali (en mi caso)".
-      * En el caso que no os aparezca la ruta y solo os aparezca el nombre del fichero, podemos buscarlo con el comando: ```find ./ -type f -name "TempleRunOzActivity".
+      * En el caso que no os aparezca la ruta y solo os aparezca el nombre del fichero, podemos buscarlo con el comando:  
+      ```find ./ -type f -name "TempleRunOzActivity".```
 
 ![grepManifest](/images/apuntes/HackingAndroid/grepManifest.png)
 
