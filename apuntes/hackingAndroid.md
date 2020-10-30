@@ -164,19 +164,19 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 * 
     * Copiamos todos estos permisos y los pegamos en el archivo "AndroidManifest.xml" de la APK "original"
     * Debemos mirar si hay algún permiso duplicado para borrarlo y dejar solo 1.
-  * >Lo bueno de hacer esto así es que la app no va a pedirle al usuario los permisos adicionales que le hemos añadido cuando abra la app (Si lo hará pero ya dentro de la app y con el nombre e sta, por lo que el usuario pensará que si se lo está pidiendo la app que está ejecutando es algo normal y los aceptará).
+  * >Lo bueno de hacer esto así es que la app no va a pedirle al usuario los permisos adicionales que le hemos añadido cuando abra la app (Si lo hará, pero ya dentro de la app y con el nombre de esta, por lo que el usuario pensará que si se lo está pidiendo la app que está ejecutando es algo normal y los aceptará).
 
 ![Permisison](/images/apuntes/HackingAndroid/permissions.png)
 
 * Una vez todo esto realizado correctamente nos queda compilar de nuevo la APK.
-  * java -jar apktool 2.4.1.jar b "nombre de la apk" -o "nombre que queremos llamar a la nueva apk" (este es el paso que fallará si usamos la versión "dirty")
+  * ```java -jar apktool 2.4.1.jar b "nombre de la apk" -o "nombre que queremos llamar a la nueva apk"``` (este es el paso que fallará si usamos la versión "dirty")
   * Esto nos creará una nueva APK ya con nuestro código malicioso dentro.
 
 ![compilando](/images/apuntes/HackingAndroid/compiling.png)
 
 * El problema que tenemos ahora que si le pasamos esta APK a nuestro dispositivo, nos lo va a detectar como maliciosa y no queremos que eso pase.
-* Con la utilidad ```"keytool"``` (que suele venir preinstalada) vamos a generarnos una key para firmar la app y que la detecte como benigna.
-  * ```keytool -genkey -keystore "nombre archivo que se va a crear" -alias "un alias para reconocerlo" -keyalg RSA -keysize 2048 -validity 1000
+* Con la utilidad **"keytool"** (que suele venir preinstalada) vamos a generarnos una key para firmar la app y que la detecte como benigna.
+  * ```keytool -genkey -keystore "nombre archivo que se va a crear" -alias "un alias para reconocerlo" -keyalg RSA -keysize 2048 -validity 1000```
     * -genkey => Para que genere una nueva key.
     * -keystore => Y el nombre de archivo que queremos crear.
     * -alias => Ponerle un alias a la key.
