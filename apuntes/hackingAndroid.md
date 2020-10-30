@@ -9,11 +9,12 @@ Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera 
 ## INDICE
 
 * [**1. Preparación del "laboratorio"**](#preparacion-del-laboratorio)
-* [**2. Crear APK maliciosa sencilla**](/apuntes/#crear-apk-maliciosa-sencilla)
-* [**3. Crear APK maliciosa original**](https://borb3d.github.io/apuntes/#crear-apk-maliciosa-original)
-* [**4. Ejecución de exploit en la vícima**](/apuntes/hackingAndroid.md/#ejecucion-de-exploit-en-la-victima)
+* [**2. Crear APK maliciosa sencilla**](#crear-apk-maliciosa-sencilla)
+* [**3. Crear APK maliciosa original**](#crear-apk-maliciosa-original)
+* [**4. Ejecución de exploit en la vícima**](#ejecucion-de-exploit-en-la-victima)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<a name="preparacion-del-laboratorio"></a>
 ## Preparación del laboratorio
 
 Primero debemos descargarnos la aplicación **"VMOS"** en nuestro terminal.
@@ -57,6 +58,7 @@ Como saben, no soy partidario de usar Metasploit (ni me gusta) pero en el caso d
 * Realizar fotos o grabar vídeos y guardarlo en tu equipo de cualquiera de las cámaras...
 * Y muchas más opciones que os dejo averiguarlas por vosotros mismos.
 
+<a name="crear-apk-maliciosa-sencilla"></a>
 ## Crear APK maliciosa sencilla
 
 Con ```"NGROK"``` podemos levantar un servidor para que la víctima descarge nuestra APK maliciosa. Tenemos primero que registrarnos en la página web para que se sincronice la cuenta con la de la app y usar el apiToken.  
@@ -96,7 +98,8 @@ Con ```"msfvenom"``` podemos crear una APK maliciosa, para ello ejecutamos el si
 Una vez hecho todo esto solo deberíamos dejar en escucha un multi-handler de metasploit escuchando en todas las IPs (0.0.0.0) y el puerto que le dijimos nosotros a ngro (el local).
 >Todo esto lo vamos a ver más en detalle en el apartado "Ejecución de exploit en la víctima"
 
-## Crear APK maliciosa original
+<a name="crear-apk-maliciosa-original"></a>
+## Crear APK maliciosa "original"
 
 Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos a hacer es:
 * Obtener una APK legítima y real, de donde queramos...
@@ -197,6 +200,7 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 
 ![zipalign](/images/apuntes/HackingAndroid/zipalign.png)
 
+<a name="ejecucion-de-exploit-en-la-victima"></a>
 ## Ejecución de exploit en la víctima
 
 Lo primero que debemos hacer es, en este ejemplo, dejar **NGROK** preparado para recibir peticiones TCP (se ve en el apartado "Crear APK maliciosa sencilla).
