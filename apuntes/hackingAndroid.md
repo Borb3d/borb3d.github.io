@@ -9,8 +9,8 @@ Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera 
 ## INDICE
 
 * [**1. Preparación del "laboratorio"**](https://borb3d.github.io/apuntes/hackingAndroid.html/#preparacion-del-laboratorio)
-* [**2. Crear APK maliciosa sencilla**](/apuntes/hackingAndroid.md/#crear-apk-maliciosa-sencilla)
-* [**3. Crear APK maliciosa original**](/apuntes/hackingAndroid.md/#crear-apk-maliciosa-original)
+* [**2. Crear APK maliciosa sencilla**](/apuntes/#crear-apk-maliciosa-sencilla)
+* [**3. Crear APK maliciosa original**](https://borb3d.github.io/apuntes/#crear-apk-maliciosa-original)
 * [**4. Ejecución de exploit en la vícima**](/apuntes/hackingAndroid.md/#ejecucion-de-exploit-en-la-victima)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
