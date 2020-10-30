@@ -1,7 +1,8 @@
 # Hacking Android
 Volver al [Indice](README.md)
 
-Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera llamar lo he hecho para mí, para practicar y recordar lo que estoy haciendo. Partiendo de la base que lo he elaborado basándome en cursos que he ido ojeando, de plataformas como Udemy, BacktracAcademy, youtube (en especial el vídeo de S4vitar, personalmente me parece bastante bueno su vídeo sobre esto), es posible que veáis bastantes referencias de algunos curso que os podáis encontrar, por lo tanto no es algo que haya realizado yo desde 0, es basado en mi experiencia propia y con ayuda de estos cursos.  
+Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera llamar lo he hecho para mí, para practicar y recordar lo que estoy haciendo.  
+Partiendo de que lo he elaborado basándome en cursos que he ido ojeando, de plataformas como Udemy, BacktracAcademy, youtube (en especial el vídeo de S4vitar, personalmente me parece bastante bueno su vídeo sobre esto), es posible que veáis bastantes referencias de algunos curso que os podáis encontrar, por lo tanto no es algo que haya realizado yo desde 0, es basado en mi experiencia propia y con ayuda de estos cursos.  
 **¡COMENZAMOS!** 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -9,8 +10,11 @@ Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera 
 ## INDICE
 
 * [**1. Preparación del "laboratorio"**](#preparacion-del-laboratorio)
+
 * [**2. Crear APK maliciosa sencilla**](#crear-apk-maliciosa-sencilla)
+
 * [**3. Crear APK maliciosa original**](#crear-apk-maliciosa-original)
+
 * [**4. Ejecución de exploit en la vícima**](#ejecucion-de-exploit-en-la-victima)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,15 +25,15 @@ Primero debemos descargarnos la aplicación **"VMOS"** en nuestro terminal.
 
 ![https://www.vmos.com/](/images/apuntes/HackingAndroid/vmosApk.png)
 
-* Es una aplicación que lo que hace básicamente es virtualizar otro Android con versión 5.1 dentro del nuestro, por lo que el Android anfitrión no se vería afectado de todo lo que le hagamos a la VM.
-
-![vmosInstall](/images/apuntes/HackingAndroid/vmosInstall.png)
+* Es una aplicación que básicamente virtualiza otro Android con versión 5.1 dentro del nuestro, por lo que el Android anfitrión no se vería afectado de todo lo que le hagamos a la VM.
 
 * Este proceso es algo largo ya que debe descargar la imagen de Android e instalarla.
 
 ![installROM](/images/apuntes/HackingAndroid/instalarROM.png)
+![vmosInstall](/images/apuntes/HackingAndroid/vmosInstall.png)
 
-* Una vez finalizado nos pedirá que nos descarguemos **"VMOS Unlocker"**, lo buscamos (tanto VMOS normal como VMOS Unlocker desde fuera de la Play Store) y lo instalamos. Esto sirve para poder usar la VM así que no nos queda más remedio que hacerlo.
+* Una vez finalizado nos pedirá que nos descarguemos **"VMOS Unlocker"**, lo buscamos (tanto VMOS normal como VMOS Unlocker desde fuera de la Play Store) y lo instalamos.  
+Esto sirve para poder usar la VM así que no nos queda más remedio que hacerlo.
 
 ![vmosUnlocker](/images/apuntes/HackingAndroid/vmosUnlocker.png)
 ![vmosUnlocker](/images/apuntes/HackingAndroid/apkTools.png)
