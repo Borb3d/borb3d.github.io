@@ -11,9 +11,11 @@ Serán bienvenidas tanto críticas como diferentes puntos de vista u otras forma
 
 Pueden contactarme por email a: borb3d@gmail.com y en telegram o twitter como "borb3d".
 
-edit: Voy a ir realizando de vez en cuando máquinas de HTB a partir de ahora, voy a seguir una plantilla de máquinas "estilo OSCP", no es que me esté preparando para ello pero creo que es la mejor ruta a coger para evolucionar como pretendo.  
+edit: Voy a ir realizando de vez en cuando máquinas de HTB u otras plataformas a partir de ahora, voy a seguir una plantilla de máquinas "estilo OSCP", no es que me esté preparando para ello pero creo que es la mejor ruta a coger para evolucionar como pretendo.  
 Dejo por aquí el enlace a estas máquinas para quien quiera verlas.
-[Máquinas HTB estilo OSCP](https://miro.medium.com/max/700/1*2h8wk0uAnDReRRPlCXMX7g.png)
+*  [Máquinas HTB estilo OSCP](https://www.netsecfocus.com/assets/img/posts/TJNulls_Preparation_Guide_for_PEN_200/hackthebox.JPG)
+*  [Máquinas Offensive Security estilo OSCP](https://www.netsecfocus.com/assets/img/posts/TJNulls_Preparation_Guide_for_PEN_200/proving-grounds.PNG)
+*  [Máquinas VulnHub estilo OSCP](https://www.netsecfocus.com/assets/img/posts/TJNulls_Preparation_Guide_for_PEN_200/vulnhub.JPG)
 
 Gracias por su atención y os dejo por aquí las WriteUps!
 
