@@ -3,7 +3,7 @@ Volver al [Indice](../README.md)
 <a name="top"></a>
 
 Antes de nada quiero comentar que esta guía, apuntes, tutorial, como se quiera llamar lo he hecho para mí, para practicar y recordar lo que estoy haciendo.  
-Partiendo de que lo he elaborado basándome en cursos que he ido ojeando, de plataformas como Udemy, BacktracAcademy, youtube (en especial el vídeo de S4vitar, personalmente me parece bastante bueno su vídeo sobre esto), es posible que veáis bastantes referencias de algunos curso que os podáis encontrar, por lo tanto no es algo que haya realizado yo desde 0, es basado en mi experiencia propia y con ayuda de estos cursos.  
+Partiendo de que lo he elaborado basándome en cursos que he ido ojeando, de plataformas como Udemy, BacktracAcademy, youtube, es posible que veáis bastantes referencias de algunos curso que os podáis encontrar, por lo tanto no es algo que haya realizado yo desde 0, es basado en mi experiencia propia y con ayuda de estos cursos.  
 **¡COMENZAMOS!** 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -116,7 +116,7 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
 ### Empezamos
 * Primero Comenzamos descargando la app que queramos (en mi caso "Temple Run").
   * Antes de nada aconsejaros que probéis que la apk que vamos a descargar sin modificar funciona correctamente en el dispositivo víctima, yo tuve que probar un par de apps antes porque me abrían la sesión y se cerraba la app junto con la sesión y era porque la app que descargué no funcionaba en el dispositivo que yo estaba usando...
-  * [https://www.apkmonk.com/](https://www.apkmonk.com/) => Usé esta página como usó S4vitar, porque descargando desde la PlayStore probé varios y no me funcionaba (puede ser por estar corriendo un Android 5.1, o por tener que profundizar más en el código, pero lo dejé ahí ya que tenía otras vías).
+  * [https://www.apkmonk.com/](https://www.apkmonk.com/) => Usé esta página porque descargando desde la PlayStore probé varios y no me funcionaba (puede ser por estar corriendo un Android 5.1, o por tener que profundizar más en el código, pero lo dejé ahí ya que tenía otras vías).
 * Instalamos la aplicación **"apktool"** desde la URL: [https://github.com/iBotPeaches/Apktool/releases/download/v2.4.1/apktool_2.4.1.jar](https://github.com/iBotPeaches/Apktool/releases/download/v2.4.1/apktool_2.4.1.jar)
   * La descargamos desde este enlace porque la que viene en repositorio de Kali/Parrot no es correcta y falla. (comprobar si esto es así, con el comando ```"apktool --version"```. Si nos dice que la versión es como en la imagen, la dirty, no nos va a funcionar la compilación de la app maliciosa).
 
@@ -133,7 +133,8 @@ Lo primero explicar esto, cuando digo APK maliciosa **"original"**, lo que vamos
   * Dentro de este directorio podemos ver el directorio "com" y dentro de este tenemos el directorio "metasploit".
   * Vamos a comprimir el directorio "smali" de nuestra APK maliciosa para descomprimirlo directamente dentro del mismo directorio dentro de la APK "original".
     * Podemos realizarlo con el comando (estando ubicados en la raiz del directorio de nuestro payload):  
-    ```tar -cf - ./smali | ( cd ../temple; tar -xpf - )``` ==> Gracias S4vitar por el comando
+    ```tar -cf - ./smali | ( cd ../temple; tar -xpf - )```
+    
 
 ![tarSmali](/images/apuntes/HackingAndroid/tarSmali.png)
 * 
