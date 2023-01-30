@@ -36,7 +36,7 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 *  [**9. BoilerCTF**](thm/boilerCtf.md)
 
 
-<img src="https://app.hackthebox.com/profile/363852" alt="HackTheBox">
+<a href="https://app.hackthebox.com/profile/363852"><img src="https://www.hackthebox.com/badge/image/363852" alt="HackTheBox">
 
 *  [**1. Lame**](htb/lame.md)
 *  [**2. Admirer**](htb/admirer.md)
