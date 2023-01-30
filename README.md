@@ -24,7 +24,7 @@ Gracias por su atención y os dejo por aquí las WriteUps!
 *  [**1. Hacking Android**](apuntes/hackingAndroid.md)
 
 
-<img src="https://tryhackme-badges.s3.amazonaws.com/borb3d.png" alt="TryHackMe">
+ <script src="https://tryhackme.com/badge/124461"></script>
 *  [**1. Agent Sudo**](thm/AgentSudo.md)
 *  [**2. Bounty Hacker**](thm/bountyHacker.md)
 *  [**3. Kiba**](thm/kiba.md)
